@@ -77,7 +77,7 @@ function Footer() {
 
         <div className={styles["footer-content-3"]}>
           <div className={styles["footer-text"]}>
-            <h6 className={styles.txts}>Made With Love By Finland All Right Reserved</h6>
+            <h6 className={styles.txts}>Made With Love By aouracodes All Right Reserved</h6>
           </div>
         </div>
       </div>
