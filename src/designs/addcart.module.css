@@ -42,15 +42,15 @@
   color: #252b42;
 }
 
-.cart-container .cart-content-1 {
+.cart-content-1 {
   display: flex;
   flex-direction: column;
   width: 80%;
   height: auto;
-  padding: 30px 32px 0px 32px;
+  padding: 30px 32px 0;
 }
 
-.cart-container .cart-content-1 h3 {
+.cart-content-1 h3 {
   font-size: 24px;
   font-weight: 400;
   line-height: 33.6px;
@@ -58,7 +58,7 @@
   margin-bottom: 10px;
 }
 
-.item-container-1 .item-header {
+.item-header {
   display: flex;
   height: 56px;
   background: #3b4148;
@@ -75,14 +75,14 @@
   letter-spacing: 0.002em;
 }
 
-.item-container-1 .quantity-price {
+.quantity-price {
   display: flex;
   align-items: center;
   gap: 11rem;
   padding: 0 5px;
 }
 
-.item-container-2 .heroCart-Section {
+.heroCart-Section {
   display: flex;
   align-items: center;
   width: 650px;
@@ -91,7 +91,7 @@
   padding: 10px;
 }
 
-.heroCart-Section .hero-item {
+.hero-item {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -105,7 +105,7 @@
   color: #2ba501;
 }
 
-.heroCart-Section .add-quantity {
+.add-quantity {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -124,7 +124,6 @@
 
 .add-quantity .reduce {
   background: #d2d6db;
-  width: 0x;
   height: 28px;
   padding: 5px;
   border-radius: 20px;
@@ -167,7 +166,7 @@
 }
 
 .cart-text h4 {
-  margin: 5px 0 10px 0;
+  margin: 5px 0 10px;
   font-size: 10px;
   font-weight: 500;
   line-height: 14.63px;
@@ -196,19 +195,16 @@
   padding: 20px;
 }
 
-.cart-content-2 .summary-content-1 {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  justify-content: space-between;
-  margin: 30px 0;
-}
-
+.summary-content-1,
 .summary-content {
   display: flex;
   align-items: center;
   gap: 5rem;
   justify-content: space-between;
+}
+
+.summary-content-1 {
+  margin: 30px 0;
 }
 
 .summary-content-2 {
@@ -284,19 +280,14 @@
     padding: 0 80px;
   }
 
-  .item-container-2 .heroCart-Section {
-    display: flex;
-    align-items: center;
+  .heroCart-Section {
     width: 650px;
     justify-content: space-between;
   }
 
-  .cart-container .cart-content-1 {
-    display: flex;
-    flex-direction: column;
+  .cart-content-1 {
     width: 100%;
-    height: auto;
-    padding: 0px;
+    padding: 0;
   }
 }
 
@@ -305,88 +296,83 @@
     padding: 0;
   }
 
-  .item-container-1 .item-header {
-    display: flex;
-    justify-content: space-between;
+  .item-header {
     width: 100%;
   }
 
-  .item-container-1 .quantity-price {
-    display: flex;
+  .quantity-price {
     gap: 1rem;
   }
 }
 
 @media (max-width: 750px) {
   .cart-container {
-    display: flex;
     flex-direction: column;
   }
 
-  .cart-container .cart-content-1 {
+  .cart-content-1,
+  .cart-content-2 {
     width: 100%;
   }
+
   .shop-links {
-    display: flex;
     justify-content: center;
   }
 
   .shop-links .shop_1 {
     color: #bdbdbd;
-  } 
+  }
 
   .shop,
   .shop-links .left-arrow {
     display: none;
   }
-  .cart-text p{
+
+  .cart-text p {
     margin-top: 2.2rem;
   }
-  .cart-content-2 {
-    width: 100%;
-  }
+
   .cart-content-2 .btn {
     border-bottom: none;
   }
-  .item-container-2 .heroCart-Section {
-    display: flex;
+
+  .heroCart-Section {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 314px;
-    gap: 0;
+    align-items: center;
     position: relative;
   }
-  .price-quantity{
-    display: flex;
+
+  .price-quantity {
     flex-direction: row;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 22%;
     left: 16%;
   }
-  .price-quantity h4{
+
+  .price-quantity h4 {
     font-size: 14px;
     font-weight: 400;
     line-height: 19.6px;
-    letter-spacing: 0.002em; 
   }
-  .pay-image{
+
+  .pay-image {
     display: none;
   }
-  .heroCart-Section .add-quantity{
+
+  .heroCart-Section .add-quantity {
     position: absolute;
     bottom: -15%;
     width: 40%;
     right: 0;
   }
-  .delete-container{
+
+  .delete-container {
     margin-bottom: 2rem;
   }
-  .summary-content-1 p{
+
+  .summary-content-1 p {
     font-size: 14px;
   }
 }
-
